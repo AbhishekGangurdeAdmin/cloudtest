@@ -1,6 +1,7 @@
 FROM centos:7
 MAINTAINER abhirgangurde56@gmail.com
-RUN yum -y install httpd && \
+RUN yum -y update
+yum -y install httpd httpd-tools \
 zip \
 unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
